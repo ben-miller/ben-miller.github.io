@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Llms on My Personal Website</title>
+    <link>https://example.org/tags/llms/</link>
+    <description>Recent content in Llms on My Personal Website</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Jul 2025 00:00:00 -0600</lastBuildDate>
+    <atom:link href="https://example.org/tags/llms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Engineering Links</title>
+      <link>https://example.org/post/ai-engineering-resources/</link>
+      <pubDate>Tue, 22 Jul 2025 00:00:00 -0600</pubDate>
+      <guid>https://example.org/post/ai-engineering-resources/</guid>
+      <description>&lt;h2 id=&#34;llm-driven-development&#34;&gt;LLM-Driven Development&lt;/h2&gt;&#xA;&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://utkarshkanwat.com/writing/betting-against-agents/&#34;&gt;https://utkarshkanwat.com/writing/betting-against-agents/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://decodingml.substack.com/p/stop-building-ai-agents&#34;&gt;https://decodingml.substack.com/p/stop-building-ai-agents&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;llm-based-workflows&#34;&gt;LLM-Based Workflows&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://crawshaw.io/blog/programming-with-agents&#34;&gt;https://crawshaw.io/blog/programming-with-agents&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/&#34;&gt;https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sketch.dev/blog/programming-with-llms&#34;&gt;https://sketch.dev/blog/programming-with-llms&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;building-llm-agents&#34;&gt;Building LLM Agents&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://ampcode.com/how-to-build-an-agent&#34;&gt;https://ampcode.com/how-to-build-an-agent&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://ampcode.com/agents-for-the-agent&#34;&gt;https://ampcode.com/agents-for-the-agent&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sketch.dev/blog/agent-loop&#34;&gt;https://sketch.dev/blog/agent-loop&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.anthropic.com/engineering/building-effective-agents&#34;&gt;https://www.anthropic.com/engineering/building-effective-agents&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;socials&#34;&gt;Socials&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://x.com/headinthebox&#34;&gt;https://x.com/headinthebox&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://x.com/anaisbetts&#34;&gt;https://x.com/anaisbetts&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;awesome-lists&#34;&gt;Awesome Lists&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/papers-we-love/papers-we-love&#34;&gt;https://github.com/papers-we-love/papers-we-love&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Repetition</title>
+      <link>https://example.org/post/meditative-repitition/</link>
+      <pubDate>Sat, 19 Jul 2025 17:57:14 -0600</pubDate>
+      <guid>https://example.org/post/meditative-repitition/</guid>
+      <description>&lt;p&gt;There are countless ways of practicing meditation, and most involve fixing your attention on some physical or mental object and bringing your attention back to it, over and over again. In some sense, any way of engaging one&amp;rsquo;s attention - by mental or physical means - repetitively and over a sustained period can be considered a kind of meditation.&lt;/p&gt;&#xA;&lt;p&gt;If you meditate with enough duration and intensity, stuff starts to happen. You might find yourself in a deep, serene, or trancelike state of mind. You might find that it opens up a deep sense of effortlessness or intuition. The benefits can be profound.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

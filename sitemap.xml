@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://example.org/post/ai-engineering-resources/</loc>
+    <lastmod>2025-07-22T00:00:00-06:00</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/ai-engineering/</loc>
+    <lastmod>2025-07-22T00:00:00-06:00</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/llms/</loc>
+    <lastmod>2025-07-22T00:00:00-06:00</lastmod>
+  </url><url>
+    <loc>https://example.org/</loc>
+    <lastmod>2025-07-22T00:00:00-06:00</lastmod>
+  </url><url>
+    <loc>https://example.org/post/</loc>
+    <lastmod>2025-07-22T00:00:00-06:00</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/</loc>
+    <lastmod>2025-07-22T00:00:00-06:00</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/automation/</loc>
+    <lastmod>2025-07-19T17:57:14-06:00</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/meditation/</loc>
+    <lastmod>2025-07-19T17:57:14-06:00</lastmod>
+  </url><url>
+    <loc>https://example.org/post/meditative-repitition/</loc>
+    <lastmod>2025-07-19T17:57:14-06:00</lastmod>
+  </url><url>
+    <loc>https://example.org/about/</loc>
+    <lastmod>2025-07-09T00:00:00-06:00</lastmod>
+  </url><url>
+    <loc>https://example.org/categories/</loc>
+  </url>
+</urlset>
