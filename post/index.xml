@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Waiting it Out</title>
+    <link>https://example.org/post/</link>
+    <description>Recent content in Posts on Waiting it Out</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Aug 2025 00:00:00 -0600</lastBuildDate>
+    <atom:link href="https://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The case for giving up in 2025</title>
+      <link>https://example.org/post/the-case-for-giving-up-in-2025/</link>
+      <pubDate>Fri, 08 Aug 2025 00:00:00 -0600</pubDate>
+      <guid>https://example.org/post/the-case-for-giving-up-in-2025/</guid>
+      <description>&lt;p&gt;There&amp;rsquo;s no shortage of evidence that the job market is fucked right now. The story of someone spending over a year searching for work, only to collect hundreds of rejections has become so commonplace that it&amp;rsquo;s not worth citing. Despite the &lt;a href=&#34;https://angelialevy.com/2011/08/06/lies-damn-lies-and-unemployment-numbers/&#34;&gt;comically misrepresented&lt;/a&gt; unemployment statistics published by the BLS, the &lt;em&gt;true&lt;/em&gt; &lt;a href=&#34;https://www.lisep.org/tru&#34;&gt;unemployment rate&lt;/a&gt; is closer to 24%. In tech, it&amp;rsquo;s something like 200 applicants per posting right now.&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s no saying when this will improve. Maybe next year, maybe in 5, maybe never. Either market conditions will improve, we&amp;rsquo;ll undergo some major (hopefully socialist) political shift, or things will continue to get worse. Either we&amp;rsquo;re doomed or we&amp;rsquo;re not. If we&amp;rsquo;re doomed, there&amp;rsquo;s not much that doubling down on your job search is going to do right now. If we&amp;rsquo;re not, then it&amp;rsquo;s a matter of waiting it out until conditions improve.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Don&#39;t Mind the Gap</title>
+      <link>https://example.org/post/dont-mind-the-gap/</link>
+      <pubDate>Wed, 30 Jul 2025 00:00:00 -0600</pubDate>
+      <guid>https://example.org/post/dont-mind-the-gap/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve taken two major years-long gaps over the course of my career: once from January 2016 to October 2017 (~2 years), and another from October 2022 to the present (~3 years). I realized recently that, out of the last 10 years, I&amp;rsquo;ve worked for only 5 of them.&lt;/p&gt;&#xA;&lt;p&gt;On paper, this is not a great situation to be in. This could haunt me for the rest of my career, as any astute interviewer will notice these gaps and have questions - if not serious concerns - about the time off. The advice commonly given by recruiters is to inflate my experience, or to make the dubious case that I was engaging in &amp;ldquo;freelancing&amp;rdquo; or &amp;ldquo;entrepreneurship&amp;rdquo; during this time.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tending your digital garden with Basic Formal Ontology</title>
+      <link>https://example.org/post/bfo-obsidian/</link>
+      <pubDate>Tue, 29 Jul 2025 00:00:00 -0600</pubDate>
+      <guid>https://example.org/post/bfo-obsidian/</guid>
+      <description>&lt;p&gt;Like many, I suffer from the habit of digital hoarding. Whenever I come across an idea, future plan, or piece of useful information, I add it to my ever-growing system of notes, now exceeding 10,000. As this continues to grow, every few years I need to re-think how to structure my collection of notes to so that it doesn&amp;rsquo;t collapse under the weight of itself.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve gone through numerous phases with this. I&amp;rsquo;ve explored and/or migrated between various notetaking tools, including Evernote, Org Mode, Roam Research, Logseq, Notion and, currently, Obsidian. I&amp;rsquo;ve read a book on the Zettelkasten method, and have adopted a loose interpretation of the PARA system. Like many digital hoarders, tending to this &amp;ldquo;digital garden&amp;rdquo; has been an ongoing hobby of mine.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Basic Formal Ontology</title>
+      <link>https://example.org/post/basic-formal-ontology/</link>
+      <pubDate>Mon, 28 Jul 2025 00:00:00 -0600</pubDate>
+      <guid>https://example.org/post/basic-formal-ontology/</guid>
+      <description>&lt;p&gt;A few years back I became fascinated by the topic of ontology engineering and in particular &lt;a href=&#34;https://basic-formal-ontology.org/&#34;&gt;Basic Formal Ontology (BFO)&lt;/a&gt; and the work of &lt;a href=&#34;https://www.youtube.com/@BarrySmithOntology&#34;&gt;Barry Smith&lt;/a&gt;. Here I&amp;rsquo;ll make a basic attempt at describing what it is and why it&amp;rsquo;s imporant.&lt;/p&gt;&#xA;&lt;p&gt;An ontology, in a very oversimplified sense, is a shared vocabulary that allows for more precise communication between various people and groups. Certain words and concepts can be easily confused if we aren&amp;rsquo;t extremely precise in what we mean. Having a well-defined ontology or &amp;ldquo;controlled vocabulary&amp;rdquo; that we can use when describing some system, event, or entity helps us to get around this problem.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Repetition</title>
+      <link>https://example.org/post/meditative-repitition/</link>
+      <pubDate>Sat, 19 Jul 2025 17:57:14 -0600</pubDate>
+      <guid>https://example.org/post/meditative-repitition/</guid>
+      <description>&lt;p&gt;There are countless ways of practicing meditation, and most involve fixing your attention on some physical or mental object and bringing your attention back to it, over and over again. In some sense, any way of engaging one&amp;rsquo;s attention - by mental or physical means - repetitively and over a sustained period can be considered a kind of meditation.&lt;/p&gt;&#xA;&lt;p&gt;If you meditate with enough duration and intensity, stuff starts to happen. You might find yourself in a deep, serene, or trancelike state of mind. You might find that it opens up a deep sense of effortlessness or intuition. The benefits can be profound.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
