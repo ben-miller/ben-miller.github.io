@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic Formal Ontology | Waiting it Out</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/post/">Blog</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Basic Formal Ontology</span></h1>
+
+<h2 class="date">2025/07/28</h2>
+</div>
+
+<main>
+<p>A few years back I became fascinated by the topic of ontology engineering and in particular <a href="https://basic-formal-ontology.org/">Basic Formal Ontology (BFO)</a> and the work of <a href="https://www.youtube.com/@BarrySmithOntology">Barry Smith</a>. Here I&rsquo;ll make a basic attempt at describing what it is and why it&rsquo;s imporant.</p>
+<p>An ontology, in a very oversimplified sense, is a shared vocabulary that allows for more precise communication between various people and groups. Certain words and concepts can be easily confused if we aren&rsquo;t extremely precise in what we mean. Having a well-defined ontology or &ldquo;controlled vocabulary&rdquo; that we can use when describing some system, event, or entity helps us to get around this problem.</p>
+<p>For small groups working on small projects spanning a short time period, there&rsquo;s no need for this level of precision and logical consistency. Natural language used in documentation, meetings, and conversations is typically enough. However, for larger decades-long projects involving many groups, hundreds of people, thousands of experiments, and petabytes of data - say, massive scientific or engineering projects - having a  precise and logically-consistent vocabulary becomes essential.</p>
+<p>Beyond the need for precision, it turns out that there are all sorts of philosophically hard problems that arise when we try to define a vocabulary free of logical inconsistencies.</p>
+<p>Fortunately, there is a group of philosophically trained <a href="https://ontology.buffalo.edu/smith/">researchers</a> who have thought long and hard about this for years, and who have assisted various research communities in the construction of their own domain-specific ontologies. Over the course of that experience they have teased out the essential commonalities between these ontologies and have constructed a foundational ontology called Basic Formal Ontology (BFO). It&rsquo;s a Big Deal, and there&rsquo;s even an <a href="https://www.iso.org/obp/ui/en/#iso:std:iso-iec:21838:-2:ed-1:v1:en">ISO standard</a> for it.</p>
+<p>The specification of BFO is complex, and my understanding of it is very shallow, but I&rsquo;ll highlight a few aspects of it:</p>
+<ul>
+<li>Every definition has an is-a relationship to its parent entity, forming a tree-like structure all the way up to the root entity.</li>
+<li>A BFO-based domain-specific ontology can be constructed by taking the leaves of this BFO backbone with even more precise terms, each having an is-a relationship to its parent.</li>
+<li>Every definition is a singular noun. This follows from the requirement that each term has an is-a relationship to its parent. For example, you cannot say &ldquo;laptops is a computers&rdquo;, but you can say &ldquo;a laptop is a computer&rdquo;.</li>
+<li>Each entity defined must be a &ldquo;universal&rdquo;. The idea is that, if something is an instance of some entity defined in the ontology, then any claims about the type necessarily apply to the instance of the type. Furthermore, truth claims about some parent type apply also to each of its sub-types, as well as instances of its sub-types.</li>
+<li>The backbone itself comes equipped axiomatic relationships between its entities. When you extend BFO, you can define axiomatic relationships between the new entities, but to be BFO-conformant you need to prove that these axioms are logically consistent with each other and the parent axioms.</li>
+</ul>
+<p>Stuff like that. There&rsquo;s <em>a lot</em> more to it, but hopefully that gives you an idea.</p>
+
+</main>
+
+  <footer>
+  
+  
+  </footer>
+  </body>
+</html>
+

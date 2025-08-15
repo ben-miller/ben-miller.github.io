@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Life on Waiting it Out</title>
+    <link>https://example.org/tags/life/</link>
+    <description>Recent content in Life on Waiting it Out</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 Mar 2024 00:00:00 -0600</lastBuildDate>
+    <atom:link href="https://example.org/tags/life/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Behind</title>
+      <link>https://example.org/post/behind/</link>
+      <pubDate>Thu, 21 Mar 2024 00:00:00 -0600</pubDate>
+      <guid>https://example.org/post/behind/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ll be 34 in a few months. That&amp;rsquo;s old enough for a wide chasm to develop between you and the peers you grew up with, went to high school or university with, or worked at your first few jobs with. I&amp;rsquo;m browsing LinkedIn, stalking the people I used to know. People who I considered getting back into touch with personally, but who, if I reach out now during the job search I just started, might feel offended that I would only reach out as a matter of career necessity, rather than as a matter of friendship. I&amp;rsquo;m very impressed, even surprised, by what some of them have apparently done. It&amp;rsquo;s causing somewhat of a crisis for me.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

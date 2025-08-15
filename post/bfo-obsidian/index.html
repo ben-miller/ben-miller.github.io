@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How I structure my notes | Waiting it Out</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/post/">Blog</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">How I structure my notes</span></h1>
+
+<h2 class="date">2025/07/29</h2>
+</div>
+
+<main>
+<p>Like many, I suffer from the habit of digital hoarding. Whenever I come across an idea, future plan, or piece of useful information, I add it to my ever-growing system of notes, now exceeding 10,000. As this continues to grow, every few years I need to re-think how to structure my collection of notes to so that it doesn&rsquo;t collapse under the weight of itself.</p>
+<p>I&rsquo;ve gone through numerous phases with this. I&rsquo;ve explored and/or migrated between various notetaking tools, including Evernote, Org Mode, Roam Research, Logseq, Notion and, currently, Obsidian. I&rsquo;ve read a book on the Zettelkasten method, and have adopted a loose interpretation of the PARA system. Like many digital hoarders, tending to this &ldquo;digital garden&rdquo; has been an ongoing hobby of mine.</p>
+<p>One huge problem I&rsquo;ve faced as my notes have grown is how to structure the directories. There are numerous ways you could go about this. You could have a single directory containing thousands of notes, you could alphabetize everything, you organize based on dates, you could divide everything into topics using some Dewey Decimal-esque classification system. But what I&rsquo;ve found to work better than anything else is to use a directory structured based on <a href="https://ben-miller.github.io/post/basic-formal-ontology/">Basic Formal Ontology (BFO)</a>.</p>
+<p>The basic idea is that every note I add to the collection should have a clearly defined place to go. When adding a new note, I start by asking myself what the note actually represents: is it for a website, person, concept, physical location, cultural event, technique, tool, etc.? Based on that, I should be able to know pretty quickly where exactly in the directory structure to put the note - or whether a new category needs to be added, and where exactly to put that category. I do this in a topic-agnostic way, letting hashtags deal with topic labelling.</p>
+<p>This can be done by having a directory tree of is-a relationships that each entity can fit nicely and unambiguously into. Each note should have an is-relationship with its directory, and each directory has an is-a relationship with its parent, all the way up to the root entity. Defining what these is-a relationships up to the root level is actually pretty hard to do, but BFO provides a kind of scaffold for this which has worked remarkably well for the purpose of organizing notes logically.</p>
+<p>In my case, I made a repo called &ldquo;Ontology&rdquo; which I use as a kind of personal wiki, or conceptual map of the world. I use BFO to define the root directories, and I&rsquo;ve created my own ontology by extending that with a system of subdirectories. For each note that I create, it&rsquo;s usually pretty obvious where to put it. When it&rsquo;s not obvious, I add a new subdirectory, often employing ChatGPT to come up with a good directory path for it.</p>
+<p>It&rsquo;s an eternal work-in-progress, and far from &ldquo;BFO-compliant&rdquo;, but it has nonetheless worked extremely well for keeping up with the mass of notes that I&rsquo;ve continued to accumulate over the years. Just throwing that out there as a possible way of taming your digital garden.</p>
+<pre tabindex="0"><code>Ontology
+├── Continuant
+│   ├── &#39;Generically Dependent Continuant&#39;
+│   │   ├── &#39;Information Bearing Entity&#39;
+│   │   │   ├── &#39;Creative Agent&#39;
+│   │   │   │   ├── Architect
+│   │   │   │   ├── Blog
+│   │   │   │   ├── &#39;Book Publisher&#39;
+│   │   │   │   ├── &#39;Film Board&#39;
+│   │   │   │   ├── &#39;Film Director&#39;
+│   │   │   │   ├── Lecturer
+│   │   │   │   ├── &#39;Meditation Teacher&#39;
+│   │   │   │   ├── &#39;Music Artist&#39;
+│   │   │   │   ├── Photographer
+│   │   │   │   ├── Podcast
+│   │   │   │   ├── &#39;Record Label&#39;
+│   │   │   │   ├── Researcher
+│   │   │   │   ├── &#39;Sculpture Artist&#39;
+│   │   │   │   │   └── &#39;Kinetic Sculpture Artist&#39;
+│   │   │   │   ├── Studio
+│   │   │   │   │   ├── &#39;Architecture Studio&#39;
+│   │   │   │   │   ├── &#39;Art Studio&#39;
+│   │   │   │   │   └── &#39;Film Studio&#39;
+│   │   │   │   ├── &#39;Visual Artist&#39;
+│   │   │   │   ├── Writer
+│   │   │   │   └── &#39;YouTube Channel&#39;
+│   │   │   ├── Database
+│   │   │   ├── &#39;Online Forum&#39;
+│   │   │   │   └── Subreddit
+│   │   │   ├── Periodical
+│   │   │   │   ├── Magazine
+│   │   │   │   ├── Newsletter
+│   │   │   │   ├── Newspaper
+│   │   │   ├── &#39;Radio Station&#39;
+│   │   │   └── Website
+│   │   └── &#39;Information Content Entity&#39;
+│   │       ├── &#39;Academic Field&#39;
+│   │       ├── Algorithm
+│   │       ├── &#39;Audiovisual Content Entity&#39;
+│   │       │   ├── &#39;Audio Track&#39;
+│   │       │   ├── Documentary
+│   │       │   ├── Movie
+│   │       │   │   ├── &#39;Music Video&#39;
+│   │       │   │   ├── &#39;Short Film&#39;
+│   │       │   ├── &#39;Music Album&#39;
+│   │       │   ├── &#39;Online Course&#39;
+│   │       │   ├── &#39;Online Learning Resource&#39;
+│   │       │   ├── &#39;Podcast Episode&#39;
+│   │       │   │   └── &#39;Deconstructing Yourself&#39;
+│   │       │   ├── Talk
+│   │       │   │   ├── &#39;Commencement Address&#39;
+│   │       │   ├── &#39;TV Series&#39;
+│   │       │   └── &#39;YouTube Video&#39;
+│   │       ├── &#39;Belief System&#39;
+│   │       │   └── &#39;Religious Belief System&#39;
+│   │       ├── Concept
+│   │       │   ├── &#39;Aesthetic Concept&#39;
+│   │       │   │   ├── &#39;Artistic Style&#39;
+│   │       │   │   └── &#39;Music Genre&#39;
+│   │       │   ├── &#39;Architectural Concept&#39;
+│   │       │   ├── &#39;Business Concept&#39;
+│   │       │   ├── &#39;Computer Science Concept&#39;
+│   │       │   │   └── &#39;Information Security Concept&#39;
+│   │       │   ├── &#39;Craftsmanship Concept&#39;
+│   │       │   ├── &#39;Creative Concept&#39;
+│   │       │   ├── &#39;Design Concept&#39;
+│   │       │   │   ├── &#39;Product Design Concept&#39;
+│   │       │   │   │   ├── &#39;Product Design Recommendation&#39;
+│   │       │   ├── &#39;Dev Concept&#39;
+│   │       │   │   ├── &#39;Dev Methodology&#39;
+│   │       │   ├── &#39;Legal Concept&#39;
+│   │       │   │   ├── &#39;Contractual Entity&#39;
+│   │       │   │   ├── &#39;Policy Stance&#39;
+│   │       │   ├── &#39;Marketing Concept&#39;
+│   │       │   ├── &#39;Mathematical Concept&#39;
+│   │       │   ├── &#39;Philosophical Concept&#39;
+│   │       │   │   ├── &#39;Dhamma Concept&#39;
+│   │       │   │   ├── &#39;Japanese Philosophical Concept&#39;
+│   │       │   │   └── &#39;Tantric Concept&#39;
+│   │       │   ├── &#39;Productivity Concept&#39;
+│   │       │   ├── &#39;Scientific Theory&#39;
+│   │       ├── &#39;Design Element&#39;
+│   │       │   ├── &#39;Font Type&#39;
+│   │       │   └── &#39;Interior Design Element&#39;
+│   │       ├── &#39;Economic Model&#39;
+│   │       ├── Idea
+│   │       │   └── &#39;Policy Idea&#39;
+│   │       ├── Instruction
+│   │       │   ├── Recipe
+│   │       │   └── Tutorial
+│   │       ├── Language
+│   │       ├── &#39;Linguistic Entity&#39;
+│   │       │   ├── &#39;LLM Prompt&#39;
+│   │       │   ├── Mantra
+│   │       │   ├── Metaphor
+│   │       │   └── &#39;Untranslatable Word&#39;
+│   │       ├── List
+│   │       │   ├── &#39;Informational Resource List&#39;
+│   │       ├── Method
+│   │       │   ├── &#39;Organizational Method&#39;
+│   │       │   └── &#39;Teaching Method&#39;
+│   │       ├── &#39;Personal Observation&#39;
+│   │       ├── &#39;Philosophical School&#39;
+│   │       ├── Practice
+│   │       │   ├── &#39;Creative Practice&#39;
+│   │       │   ├── &#39;Cultural Practice&#39;
+│   │       │   │   ├── &#39;Artistic Ritual&#39;
+│   │       │   │   ├── &#39;Dance Form&#39;
+│   │       │   │   ├── &#39;Leisure Activity&#39;
+│   │       │   │   ├── &#39;Martial Art Form&#39;
+│   │       │   │   ├── &#39;Musical Art Form&#39;
+│   │       │   │   ├── &#39;Religious Practice&#39;
+│   │       │   │   ├── &#39;Spiritual Practice&#39;
+│   │       │   │   └── &#39;Visual Art Form&#39;
+│   │       │   ├── &#39;Spiritual Practice&#39;
+│   │       │   └── Sport
+│   │       ├── &#39;Psychological Phenomenon&#39;
+│   │       ├── &#39;Representational Artifact&#39;
+│   │       │   ├── Diagram
+│   │       │   ├── &#39;Geographical Artifact&#39;
+│   │       │   └── Ontology
+│   │       ├── &#39;Social Network&#39;
+│   │       ├── &#39;Software Artifact&#39;
+│   │       │   ├── &#39;Database Application&#39;
+│   │       │   ├── &#39;Data Format&#39;
+│   │       │   ├── &#39;Operating System&#39;
+│   │       │   ├── &#39;Programming Language&#39;
+│   │       │   ├── &#39;Software Application&#39;
+│   │       │   │   ├── &#39;AI Chat Bot&#39;
+│   │       │   │   ├── &#39;Android Application&#39;
+│   │       │   │   ├── &#39;Browser Extension&#39;
+│   │       │   │   ├── &#39;Coding Agent&#39;
+│   │       │   │   ├── &#39;Command Line Tool&#39;
+│   │       │   │   ├── &#39;Desktop Application&#39;
+│   │       │   │   ├── IDE
+│   │       │   │   ├── &#39;Infra Tool&#39;
+│   │       │   │   ├── &#39;iOS Application&#39;
+│   │       │   │   ├── &#39;SaaS Application&#39;
+│   │       │   │   ├── &#39;Search Engine&#39;
+│   │       │   │   ├── &#39;Social Media Application&#39;
+│   │       │   │   ├── &#39;Terminal Emulator&#39;
+│   │       │   │   ├── &#39;Web Application&#39;
+│   │       │   │   ├── &#39;Web Browser&#39;
+│   │       │   │   └── &#39;Web Server&#39;
+│   │       │   ├── &#39;Software Package&#39;
+│   │       │   ├── &#39;Software Plugin&#39;
+│   │       │   ├── &#39;Software Protocol&#39;
+│   │       │   └── &#39;Video Game&#39;
+│   │       ├── Technique
+│   │       │   ├── &#39;Acting Technique&#39;
+│   │       │   ├── &#39;Advertising Technique&#39;
+│   │       │   ├── &#39;Artistic Technique&#39;
+│   │       │   ├── &#39;Breathing Technique&#39;
+│   │       │   ├── &#39;Collective Action Technique&#39;
+│   │       │   ├── &#39;Construction Technique&#39;
+│   │       │   ├── &#39;Cosmetic Technique&#39;
+│   │       │   ├── &#39;Cultural Influence Technique&#39;
+│   │       │   ├── &#39;Design Technique&#39;
+│   │       │   ├── &#39;Exercise Technique&#39;
+│   │       │   ├── &#39;Life Management Technique&#39;
+│   │       │   ├── &#39;Massage Technique&#39;
+│   │       │   ├── &#39;Medical Technique&#39;
+│   │       │   ├── &#39;Meditation Technique&#39;
+│   │       │   ├── &#39;Music Composition Technique&#39;
+│   │       │   ├── &#39;Physical Training Technique&#39;
+│   │       │   ├── &#39;Research Technique&#39;
+│   │       │   ├── &#39;Social Interaction Technique&#39;
+│   │       │   ├── &#39;Software Testing Technique&#39;
+│   │       │   ├── &#39;Therapy Technique&#39;
+│   │       │   └── &#39;Writing Technique&#39;
+│   │       ├── &#39;Textual Entity&#39;
+│   │       │   ├── Annotation
+│   │       │   ├── Article
+│   │       │   ├── Document
+│   │       │   │   ├── &#39;Legal Document&#39;
+│   │       │   │   └── &#39;Research Paper&#39;
+│   │       │   ├── Encyclopedia
+│   │       │   ├── Excerpt
+│   │       │   │   ├── &#39;Interview Excerpt&#39;
+│   │       │   ├── Exposition
+│   │       │   ├── Letter
+│   │       │   ├── &#39;Literary Work&#39;
+│   │       │   │   ├── Book
+│   │       │   │   │   ├── &#39;Law &amp; Politics Books&#39;
+│   │       │   │   │   ├── &#39;Meditation &amp; Spirituality Books&#39;
+│   │       │   │   │   ├── &#39;Philosophy Books&#39;
+│   │       │   │   │   ├── &#39;Religious Texts&#39;
+│   │       │   │   │   ├── &#39;Self-Help Books&#39;
+│   │       │   │   │   ├── &#39;Theatre Books&#39;
+│   │       │   │   ├── &#39;Book Series&#39;
+│   │       │   │   ├── Essay
+│   │       │   │   └── Poem
+│   │       │   ├── &#39;Online Book&#39;
+│   │       │   ├── &#39;Online Comment&#39;
+│   │       │   ├── Proverb
+│   │       │   │   └── &#39;Japanese Proverb&#39;
+│   │       │   ├── Quote
+│   │       │   └── &#39;Song Lyrics&#39;
+│   │       ├── &#39;Timekeeping System&#39;
+│   │       └── Tradition
+│   │           ├── &#39;Cultural Tradition&#39;
+│   │           └── &#39;Spiritual Tradition&#39;
+│   ├── &#39;Independent Continuant&#39;
+│   │   ├── &#39;Immaterial Entity&#39;
+│   │   │   ├── &#39;Continuant Fiat Boundary&#39;
+│   │   │   │   ├── &#39;1D Continuant Fiat Boundary&#39;
+│   │   │   │   ├── &#39;2D Continuant Fiat Boundary&#39;
+│   │   │   │   └── &#39;3D Continuant Fiat Boundary&#39;
+│   │   │   ├── &#39;Geometric Shape&#39;
+│   │   │   ├── Site
+│   │   │   └── &#39;Spatial Region&#39;
+│   │   │       ├── &#39;1D Spatial Region&#39;
+│   │   │       ├── &#39;2D Spatial Region&#39;
+│   │   │       ├── &#39;3D Spatial Region&#39;
+│   │   │       └── &#39;4D Spatial Region&#39;
+│   │   └── &#39;Material Entity&#39;
+│   │       ├── Agent
+│   │       │   ├── &#39;Historical Figure&#39;
+│   │       │   ├── Manufacturer
+│   │       │   │   ├── &#39;Cookware Manufacturer&#39;
+│   │       │   │   └── &#39;Modular Home Manufacturer&#39;
+│   │       │   ├── &#39;Mythical Figure&#39;
+│   │       │   ├── &#39;Public Figure&#39;
+│   │       │   │   ├── &#39;Political Public Figure&#39;
+│   │       │   │   └── &#39;Religious Public Figure&#39;
+│   │       │   ├── Retailer
+│   │       │   │   ├── Franchise
+│   │       │   │   └── &#39;Online Retailer&#39;
+│   │       │   ├── &#39;Service Provider&#39;
+│   │       │   │   ├── &#39;Clothing Alterations Service Provider&#39;
+│   │       │   │   ├── &#39;Consulting Service Provider&#39;
+│   │       │   │   ├── &#39;Design Firm&#39;
+│   │       │   │   ├── &#39;Event Planning Service Provider&#39;
+│   │       │   │   ├── &#39;Financial Service Provider&#39;
+│   │       │   │   │   ├── &#39;Crowdfunding Service&#39;
+│   │       │   │   │   └── &#39;Venture Capital Firm&#39;
+│   │       │   │   ├── &#39;Food Delivery Service Provider&#39;
+│   │       │   │   │   ├── &#39;Food box subscription&#39;
+│   │       │   │   ├── &#39;Housekeeping Service Provider&#39;
+│   │       │   │   ├── Instructor
+│   │       │   │   │   └── &#39;Meditation Instructor&#39;
+│   │       │   │   ├── &#39;Logistics Service Provider&#39;
+│   │       │   │   ├── &#39;Manufacturing Service Provider&#39;
+│   │       │   │   ├── School
+│   │       │   │   │   ├── &#39;Massage School&#39;
+│   │       │   │   ├── &#39;Telecom Service Provider&#39;
+│   │       │   │   └── &#39;Travel Agency&#39;
+│   │       │   └── &#39;Standards Organization&#39;
+│   │       ├── &#39;Fiat Object Part&#39;
+│   │       ├── Object
+│   │       │   ├── &#39;Consumable Product&#39;
+│   │       │   │   ├── &#39;Extracted Chemical&#39;
+│   │       │   │   │   ├── &#39;Essential Oil&#39;
+│   │       │   │   └── &#39;Ingestible Product&#39;
+│   │       │   │       ├── Beverage
+│   │       │   │       │   └── &#39;Alcoholic Beverage&#39;
+│   │       │   │       │       └── Beer
+│   │       │   │       ├── &#39;Food Item&#39;
+│   │       │   │       ├── &#39;Ingestible Chemical Product&#39;
+│   │       │   │       │   └── Medication
+│   │       │   │       │       ├── &#39;OTC Pain Reliever&#39;
+│   │       │   │       │       ├── &#39;Stimulant Medication&#39;
+│   │       │   │       ├── &#39;Ingestible Plant&#39;
+│   │       │   │       └── &#39;Ingestible Plant Product&#39;
+│   │       │   │           └── Tea
+│   │       │   │               └── &#39;Herbal Tea&#39;
+│   │       │   ├── Material
+│   │       │   │   ├── &#39;Construction Material&#39;
+│   │       │   │   ├── &#39;Decorative Material&#39;
+│   │       │   │   └── &#39;Modeling Material&#39;
+│   │       │   ├── Organism
+│   │       │   │   ├── Animal
+│   │       │   │   │   └── &#39;Species of Fish&#39;
+│   │       │   │   └── &#39;Extinct Organism&#39;
+│   │       │   └── Substance
+│   │       │       ├── &#39;Material Artifact&#39;
+│   │       │       │   ├── &#39;Artistic Artifact&#39;
+│   │       │       │   │   └── &#39;Artistic Representation&#39;
+│   │       │       │   ├── &#39;Clothing Item&#39;
+│   │       │       │   ├── &#39;Cosmetic Artifact&#39;
+│   │       │       │   ├── &#39;Cultural Artifact&#39;
+│   │       │       │   │   ├── &#39;Religious Object&#39;
+│   │       │       │   │   └── &#39;Symbolic Artifact&#39;
+│   │       │       │   ├── Device
+│   │       │       │   │   ├── &#39;Acoustic Device&#39;
+│   │       │       │   │   ├── &#39;Alerting Device&#39;
+│   │       │       │   │   └── &#39;Medical Device&#39;
+│   │       │       │   ├── &#39;Documentary Artifact&#39;
+│   │       │       │   ├── &#39;Equipment Item&#39;
+│   │       │       │   │   ├── &#39;Electronic Device&#39;
+│   │       │       │   │   │   ├── &#39;Computing Accessory&#39;
+│   │       │       │   │   │   │   ├── &#39;Audio Device&#39;
+│   │       │       │   │   │   │   ├── Keyboard
+│   │       │       │   │   │   │   ├── Keypad
+│   │       │       │   │   │   │   ├── &#39;Recording Device&#39;
+│   │       │       │   │   │   ├── &#39;Gaming Accessory&#39;
+│   │       │       │   │   │   ├── &#39;Gaming Console&#39;
+│   │       │       │   │   │   ├── Screen
+│   │       │       │   │   │   ├── &#39;Security Device&#39;
+│   │       │       │   │   │   ├── Smartphone
+│   │       │       │   │   │   └── Tablet
+│   │       │       │   │   ├── &#39;Office Equipment Item&#39;
+│   │       │       │   │   │   ├── Printer
+│   │       │       │   │   │   ├── &#39;Stationery Item&#39;
+│   │       │       │   │   ├── &#39;Sporting Equipment Item&#39;
+│   │       │       │   │   └── &#39;Stationary Equipment Item&#39;
+│   │       │       │   │       └── &#39;Stationary Sporting Equipment Item&#39;
+│   │       │       │   ├── &#39;Household Item&#39;
+│   │       │       │   │   ├── &#39;Bedding Item&#39;
+│   │       │       │   │   ├── &#39;Decorative Item&#39;
+│   │       │       │   │   │   ├── Candle
+│   │       │       │   │   ├── &#39;Furniture Item&#39;
+│   │       │       │   │   │   ├── Chair
+│   │       │       │   │   ├── &#39;Household Appliance&#39;
+│   │       │       │   │   │   └── &#39;Installed Household Appliance&#39;
+│   │       │       │   │   │       └── &#39;Laundry Chute&#39;
+│   │       │       │   │   ├── &#39;Household Item&#39;
+│   │       │       │   │   ├── &#39;Kitchen Item&#39;
+│   │       │       │   │   │   ├── &#39;Cookware Item&#39;
+│   │       │       │   │   ├── &#39;Lighting Apparatus&#39;
+│   │       │       │   │   └── &#39;Window Covering&#39;
+│   │       │       │   ├── &#39;Manufacturing Device&#39;
+│   │       │       │   │   └── &#39;Industrial Manufacturing Device&#39;
+│   │       │       │   ├── &#39;Medicinal Artifact&#39;
+│   │       │       │   │   └── &#39;Herb Inhaler&#39;
+│   │       │       │   ├── &#39;Musical Instrument&#39;
+│   │       │       │   ├── &#39;Recreational Artifact&#39;
+│   │       │       │   │   └── &#39;Table Top Game&#39;
+│   │       │       │   │       ├── &#39;Board Game&#39;
+│   │       │       │   │       └── &#39;Card Game&#39;
+│   │       │       │   ├── Tool
+│   │       │       │   │   ├── &#39;Drawing Tool&#39;
+│   │       │       │   │   └── &#39;Meditation Tool&#39;
+│   │       │       │   └── Vehicle
+│   │       │       │       └── &#39;Recreational Vehicle&#39;
+│   │       │       └── &#39;Medicinal Substance&#39;
+│   │       ├── &#39;Object Aggregate&#39;
+│   │       │   ├── &#39;Equipment Assembly&#39;
+│   │       │   ├── &#39;Model Kit&#39;
+│   │       │   ├── Organization
+│   │       │   │   ├── &#39;Architecture Firm&#39;
+│   │       │   │   ├── &#39;Charitable Foundation&#39;
+│   │       │   │   ├── Cooperative
+│   │       │   │   │   ├── &#39;Housing Cooperative&#39;
+│   │       │   │   │   └── Union
+│   │       │   │   ├── &#39;Educational Institution&#39;
+│   │       │   │   │   └── University
+│   │       │   │   ├── &#39;Employee Owned Company&#39;
+│   │       │   │   ├── &#39;Government Organization&#39;
+│   │       │   │   ├── &#39;Historical Organization&#39;
+│   │       │   │   ├── &#39;Intentional Community&#39;
+│   │       │   │   ├── &#39;Local Business&#39;
+│   │       │   │   ├── &#39;Major Corporation&#39;
+│   │       │   │   ├── &#39;Online Community&#39;
+│   │       │   │   ├── &#39;Performing Arts Center&#39;
+│   │       │   │   ├── &#39;Political Organization&#39;
+│   │       │   │   ├── &#39;Professional Organization&#39;
+│   │       │   │   ├── &#39;Religious Organization&#39;
+│   │       │   │   ├── &#39;Research Organization&#39;
+│   │       │   │   ├── &#39;Secret Society&#39;
+│   │       │   │   └── &#39;Tech Company&#39;
+│   │       │   ├── &#39;Social Group&#39;
+│   │       │   │   └── &#39;Ethnic Group&#39;
+│   │       │   └── System
+│   │       │       └── &#39;Infrastructure System&#39;
+│   │       └── Site
+│   │           ├── Building
+│   │           ├── &#39;Functional Space&#39;
+│   │           └── Place
+│   │               ├── &#39;Apartment Complex&#39;
+│   │               ├── Bar
+│   │               ├── Cafe
+│   │               ├── City
+│   │               ├── Country
+│   │               ├── Farm
+│   │               │   └── &#39;Organic Farm&#39;
+│   │               ├── &#39;Hiking Trail&#39;
+│   │               ├── &#39;Historical Site&#39;
+│   │               ├── Hostel
+│   │               ├── Hotel
+│   │               ├── Island
+│   │               ├── Library
+│   │               ├── &#39;Major City&#39;
+│   │               ├── Museum
+│   │               ├── &#39;Natural Wonder&#39;
+│   │               ├── Neighborhood
+│   │               ├── &#39;Night Club&#39;
+│   │               ├── Park
+│   │               │   ├── &#39;National Park&#39;
+│   │               ├── &#39;Place of Worship&#39;
+│   │               ├── &#39;Public Garden&#39;
+│   │               ├── Region
+│   │               ├── Restaurant
+│   │               ├── &#39;Retreat Center&#39;
+│   │               │   ├── &#39;Educational Retreat Center&#39;
+│   │               │   ├── &#39;Lifestyle Retreat Center&#39;
+│   │               │   └── &#39;Meditation Retreat Center&#39;
+│   │               ├── Shop
+│   │               │   ├── &#39;Book Shop&#39;
+│   │               ├── &#39;Shopping Center&#39;
+│   │               ├── Shrine
+│   │               │   └── &#39;Shinto Shrine&#39;
+│   │               ├── &#39;Tea House&#39;
+│   │               ├── &#39;Tourist Attraction&#39;
+│   │               └── Venue
+│   └── &#39;Specifically Dependent Continuant&#39;
+│       ├── Quality
+│       │   ├── &#39;Aesthetic Quality&#39;
+│       │   └── &#39;Relational Quality&#39;
+│       ├── &#39;Realizable Entity&#39;
+│       │   ├── Disposition
+│       │   │   └── Function
+│       │   └── Role
+│       │       ├── &#39;Architectural Role&#39;
+│       │       ├── &#39;Professional Role&#39;
+│       │       │   └── &#39;Professional Occupation&#39;
+│       │       └── &#39;Societal Role&#39;
+│       │           ├── &#39;Cultural Role&#39;
+│       └── &#39;Socially Constructed Entity&#39;
+│           ├── &#39;Administrative Asset&#39;
+│           ├── &#39;Institutional Process&#39;
+│           │   ├── &#39;Business Model&#39;
+│           │   ├── &#39;Governance System&#39;
+│           └── Program
+│               ├── &#39;Award Program&#39;
+│               ├── &#39;Educational Program&#39;
+│               │   └── &#39;Graduate Program&#39;
+│               │       └── &#39;Masters Program&#39;
+│               └── &#39;Grant Program&#39;
+└── Occurrent
+    └── Process
+        ├── &#39;Extraction Process&#39;
+        │   └── &#39;Mining Process&#39;
+        ├── &#39;Historical Event&#39;
+        │   └── &#39;Social Movement&#39;
+        ├── &#39;Mental Process&#39;
+        │   ├── &#39;Cognitive Process&#39;
+        │   │   └── &#39;Cognitive Distortion&#39;
+        │   └── &#39;Reasoning Process&#39;
+        │       └── &#39;Logical Fallacy&#39;
+        ├── &#39;Natural Process&#39;
+        │   └── &#39;Atmospheric Process&#39;
+        ├── &#39;Physical Process&#39;
+        ├── &#39;Planned Process&#39;
+        │   ├── &#39;Cultural Event&#39;
+        │   │   ├── Festival
+        │   │   │   ├── &#39;Film Festival&#39;
+        │   │   └── &#39;Musical Performance&#39;
+        │   ├── &#39;Educational Event&#39;
+        │   ├── &#39;Planned Environmental Process&#39;
+        │   ├── &#39;Political Event&#39;
+        │   ├── &#39;Professional Event&#39;
+        │   │   └── &#39;Industry Conference&#39;
+        │   └── &#39;Recreational Event&#39;
+        │       └── &#39;Hobbyist Convention&#39;
+        └── &#39;Social Gathering&#39;
+            ├── &#39;Dance Party&#39;
+</code></pre>
+</main>
+
+  <footer>
+  
+  
+  </footer>
+  </body>
+</html>
+
