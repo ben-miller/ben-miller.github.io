@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Job-Search on Waiting it Out</title>
+    <link>https://example.org/tags/job-search/</link>
+    <description>Recent content in Job-Search on Waiting it Out</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Aug 2025 00:00:00 -0600</lastBuildDate>
+    <atom:link href="https://example.org/tags/job-search/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Giving up</title>
+      <link>https://example.org/post/giving-up/</link>
+      <pubDate>Fri, 08 Aug 2025 00:00:00 -0600</pubDate>
+      <guid>https://example.org/post/giving-up/</guid>
+      <description>&lt;p&gt;There&amp;rsquo;s no shortage of evidence that the job market is fucked right now. The story of someone spending over a year searching for work, only to collect hundreds of rejections has become so commonplace that it&amp;rsquo;s not worth citing. Despite the &lt;a href=&#34;https://angelialevy.com/2011/08/06/lies-damn-lies-and-unemployment-numbers/&#34;&gt;comically misrepresented&lt;/a&gt; unemployment statistics published by the BLS, the &lt;em&gt;true&lt;/em&gt; &lt;a href=&#34;https://www.lisep.org/tru&#34;&gt;unemployment rate&lt;/a&gt; is closer to 24%. In tech, it&amp;rsquo;s something like 200 applicants per posting right now.&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s no saying when this will improve. Maybe next year, maybe in 5, maybe never. Either market conditions will improve, we&amp;rsquo;ll undergo some major (hopefully socialist) political shift, or things will continue to get worse. Either we&amp;rsquo;re doomed or we&amp;rsquo;re not. If we&amp;rsquo;re doomed, there&amp;rsquo;s not much that doubling down on your job search is going to do right now. If we&amp;rsquo;re not, then it&amp;rsquo;s a matter of waiting it out until conditions improve.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

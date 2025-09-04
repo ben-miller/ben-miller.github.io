@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Accounting on Waiting it Out</title>
+    <link>https://example.org/tags/accounting/</link>
+    <description>Recent content in Accounting on Waiting it Out</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 -0600</lastBuildDate>
+    <atom:link href="https://example.org/tags/accounting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Experience-Value Accounting</title>
+      <link>https://example.org/post/experience-value-accounting/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 -0600</pubDate>
+      <guid>https://example.org/post/experience-value-accounting/</guid>
+      <description>&lt;p&gt;I once did a &lt;a href=&#34;https://www.youtube.com/@AccountingStuff&#34;&gt;deep-dive&lt;/a&gt; into double-entry bookkeeping and I was not expecting to become so fascinated by it. It turns out that it&amp;rsquo;s possible to account for far more than just physical and financial assets. For example, it&amp;rsquo;s possible - and often necessary - to account for the value of a company&amp;rsquo;s brand or intellectual property. But these are not concrete things, and there is no obvious way of determining their value. Still, accountants have managed to come up with some clever tricks for doing so.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

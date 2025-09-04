@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Digital-Gardening on Waiting it Out</title>
+    <link>https://example.org/tags/digital-gardening/</link>
+    <description>Recent content in Digital-Gardening on Waiting it Out</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Jul 2025 00:00:00 -0600</lastBuildDate>
+    <atom:link href="https://example.org/tags/digital-gardening/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I structure my notes</title>
+      <link>https://example.org/post/bfo-obsidian/</link>
+      <pubDate>Tue, 29 Jul 2025 00:00:00 -0600</pubDate>
+      <guid>https://example.org/post/bfo-obsidian/</guid>
+      <description>&lt;p&gt;Like many, I suffer from the habit of digital hoarding. Whenever I come across an idea, future plan, or piece of useful information, I add it to my ever-growing system of notes, now exceeding 10,000. As this continues to grow, every few years I need to re-think how to structure my collection of notes to so that it doesn&amp;rsquo;t collapse under the weight of itself.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve gone through numerous phases with this. I&amp;rsquo;ve explored and/or migrated between various notetaking tools, including Evernote, Org Mode, Roam Research, Logseq, Notion and, currently, Obsidian. I&amp;rsquo;ve read a book on the Zettelkasten method, and have adopted a loose interpretation of the PARA system. Like many digital hoarders, tending to this &amp;ldquo;digital garden&amp;rdquo; has been an ongoing hobby of mine.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
