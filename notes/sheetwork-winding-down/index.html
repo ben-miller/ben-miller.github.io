@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-us"
+  dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+<link rel="icon" type="image/ico" href="https://ben-miller.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ben-miller.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ben-miller.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://ben-miller.github.io/android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ben-miller.github.io/apple-touch-icon.png">
+
+<meta name="description" content="Reflections on stepping back from Sheetwork and what it revealed about LLM-assisted development and self-optimization"/>
+
+
+
+<title>
+    
+    Sheetwork: Winding Down | Ben Miller
+    
+</title>
+
+<link rel="canonical" href="https://ben-miller.github.io/notes/sheetwork-winding-down/"/>
+
+<meta property="og:url" content="https://ben-miller.github.io/notes/sheetwork-winding-down/">
+  <meta property="og:site_name" content="Ben Miller">
+  <meta property="og:title" content="Sheetwork: Winding Down">
+  <meta property="og:description" content="Reflections on stepping back from Sheetwork and what it revealed about LLM-assisted development and self-optimization">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2026-04-25T00:00:00-06:00">
+    <meta property="article:modified_time" content="2026-04-25T00:00:00-06:00">
+    <meta property="article:tag" content="Sheetwork">
+    <meta property="article:tag" content="Productivity">
+    <meta property="article:tag" content="Planning">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.0e093384555037e2da1c5bc88743bc6ffeae5746c21531d63e6f49549c664c70.css" media="all">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+</head>
+
+
+
+<body class="auto">
+
+  <div class="content">
+    <header>
+      
+
+<div class="header">
+
+    
+
+    <h1 class="header-title">
+        <a href="https://ben-miller.github.io/">Ben Miller</a>
+    </h1>
+
+    <div class="header-menu">
+        
+
+        
+        
+
+        <p
+            class="small ">
+            <a href="/sessions/" >
+                /dev-sessions
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/til/" >
+                /til
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/notes/" >
+                /notes
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
+</div>
+
+    </header>
+
+    <main class="main">
+      
+
+
+<div >
+  <article>
+    <header class="single-intro-container">
+        
+        <h1 class="single-title">Sheetwork: Winding Down</h1>
+        
+        <div class="single-subsummary">
+          
+          <div>
+            
+            <p class="author">Ben Miller </p>
+            
+            <p class="single-date">
+              <time datetime="2026-04-25T00:00:00-06:00">April 25, 2026</time>
+            </p>
+          </div>
+        </div>
+        
+    </header>
+    
+    <div class="single-content">
+      <p>One of the things I&rsquo;ve noticed when you start using an LLM, a powerful LLM like Claude Code, along with speech-to-text, is that you can accomplish a lot very quickly. That&rsquo;s nothing new but what it also means is that your codebase expands very quickly and your technical debt expands very quickly. The surface area of what you need to polish and debug also expands very quickly. And so the situation I find myself now in is that the surface area is very large and I&rsquo;m completely overwhelmed by what there is still to do.</p>
+<p>One other thought/observation is that, in addition to the rapid speed at which you can develop something and also get yourself into technical debt, I think very quickly, even for a personal project, the codebase comes to resemble that of a bloated enterprise application. And I think, in general, that&rsquo;s not always avoidable or at least it&rsquo;s not always in one&rsquo;s interest to avoid that from happening. I think very often when an application grows big enough and one has to support enough use cases, there is some bloating that is inevitably going to happen. When you balance that with the availability of certain development resources, then often it does make sense to have it not look so great. I mean at least I think that&rsquo;s what very often happens in practice. Whether it is necessary or whether it should happen that way is a different question.</p>
+<p>Now that we have strong LLM-based coding tools, this is maybe less the case in that there&rsquo;s a lot of more or less automatic maintenance that you can do on your codebase without much human effort. Or at least I&rsquo;ve seen this case be made. But what I actually find is that, even so, running these operations requires enough human attention that you still need to be cautious about the amount of attention it requires of you. Quite often, actually running these long-running LLM sessions, where you run it before you go to bed and see what the result is when you wake up, generates enough changes that you still have to review it. If you just trust what it makes, then you run the risk of completely diverging from what you had before. Or if you review everything, then that still requires a lot of time because it&rsquo;s very unlikely that everything it did was what you intended it for you to do. So for example you can only go maybe when an LLM runs for ten minutes. Its chances of diverging from your intention are maybe 5 to 10%. But then when you run it for like two hours, then that compounds, and there&rsquo;s only like a 20% chance that it&rsquo;s doing everything as you expect. Often, the amount of effort that goes into trying to fix or undo those changes ends up exceeding the amount of time that you would have expected it to save you.</p>
+<p>But in any case when I&rsquo;m working on a solo project that has grown to such a non-trivial size, it does begin to resemble corporate work, or rather the kind of work that one would normally be paid to do. And so in that sense it becomes a lot less satisfying to work on.</p>
+<p>In the case of Sheetwork it already supports what I mainly use it for so the question is whether it&rsquo;s worth my time and energy to make it, to design it such that it works for a more general audience. And at that point it becomes more of a design problem than a technical problem. It has been interesting to notice how, when you have access to powerful LLMs that can write code, the problem shifts and climbs up the abstraction ladder. The problems you solve have a lot more to do with design than with technical implementation. And maybe that&rsquo;s an indication of where the demand for human skill is headed.</p>
+<p>For the first several months of this project it was sustained by my daily usage of it so I was very much following the process of printing out a worksheet every day, containing a detailed plan of the next day. But what I found in practice was that it accumulated over time into a very complex set of routines. Because I always think of new ways of adding to it, optimizing it, whatever. And over time it just became sort of overwhelming to the point where I created essentially an escape valve where I just declare a day as &ldquo;open&rdquo; and completely minimize the routines for that day.</p>
+<p>And so the end result was that I was effectively micromanaging myself. Ironically at the time I was also reading Byung-Chul Han, a contemporary philosopher who writes about exactly this: the idea that we effectively exploit ourselves in the name of productivity or self-optimization. So I sort of, by using Sheetwork on a daily basis, observed this self-exploitation play out in real time. Which, in a way, speaks to the power of such a system. But it&rsquo;s also ultimately its downfall and why I&rsquo;ve more or less stopped using it. I still use it from time to time. Still even maybe two or three days a week I bother to print out a routine. But at this point most of my routine is memorized or rather it becomes somewhat overwhelming because it&rsquo;s these extra things that I feel like I need to do that I would be doing on my own anyways.</p>
+<p>But I&rsquo;ve noticed now that I&rsquo;ve stopped using the worksheets every day, there are things that I just completely fail to do now. Even something so simple as flossing every day. That&rsquo;s something that I&rsquo;ve never been able to do consistently but having a thing that I have to check off is one of the only ways I can force myself to do it on a consistent basis. So it still has a lot of value to follow but again I&rsquo;m finding that I often prefer having the freedom to execute my day as I naturally want to rather than having this imposed scaffolding.</p>
+<p>So it really comes down to what your style of execution needs to be. If you really do want to establish routines for yourself and keep to them consistently, I genuinely think this is a great way of doing it.</p>
+<p>But until I get back into needing to do this on a regular basis and being willing to print this out on a daily basis, the motivation is no longer there to continue to mend out all of these tiny issues. And to implement all these feature ideas that I&rsquo;ve come up with over time. When I was using it daily, that motivation was there and I was making incremental changes to it on a very consistent basis. The end product that we have here is the result of that. But it&rsquo;s gotten to the point where it is all of these tiny technically uninteresting issues (especially now that it&rsquo;s often a matter of &ldquo;manifesting&rdquo; via Claude Code), which is just not satisfying to work on, and I don&rsquo;t feel it is really developing my technical chops in any kind of meaningful way. And so I&rsquo;d rather put my energy towards a more technically interesting project. Because again at this point the main way for this project to proceed is to subject myself a series of tiny headaches. Which just isn&rsquo;t worth it if I&rsquo;m not using the application consistently like I was before.</p>
+
+    </div>
+  </article>
+
+  
+
+  
+
+  
+  
+
+<div class="single-pagination">
+    <hr />
+
+    <div class="flexnowrap">
+
+        <div class="single-pagination-prev">
+            
+            <div class="single-pagination-container-prev">
+                <div class="single-pagination-text">←</div>
+                <div class="single-pagination-text">
+                    <a href="/notes/sheetwork-rationale/">
+                        Sheetwork: Rationale
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="single-pagination-next">
+            
+            <div class="single-pagination-container-next">
+                <div class="single-pagination-text">
+                    <a href="/notes/ignore-structure/">
+                        Structure is imaginary
+                    </a>
+                </div>
+                <div class="single-pagination-text">→</div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <hr />
+</div>
+
+
+
+  
+
+
+</div>
+
+
+    </main>
+  </div>
+
+  
+  
+
+
+
+
+
+    
+
+
+
+
+  <footer>
+    
+
+
+  </footer>
+
+  
+</body>
+
+<script defer src="/js/copy-code.js"></script>
+</html>

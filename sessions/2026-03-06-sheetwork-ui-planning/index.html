@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en-us"
+  dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+<link rel="icon" type="image/ico" href="https://ben-miller.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ben-miller.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ben-miller.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://ben-miller.github.io/android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ben-miller.github.io/apple-touch-icon.png">
+
+<meta name="description" content=""/>
+
+
+
+<title>
+    
+    Sheetwork UI planning | Ben Miller
+    
+</title>
+
+<link rel="canonical" href="https://ben-miller.github.io/sessions/2026-03-06-sheetwork-ui-planning/"/>
+
+<meta property="og:url" content="https://ben-miller.github.io/sessions/2026-03-06-sheetwork-ui-planning/">
+  <meta property="og:site_name" content="Ben Miller">
+  <meta property="og:title" content="Sheetwork UI planning">
+  <meta property="og:description" content="Plan mode. Wanting to implement some major UI features, and to do this I want to make sure we start on the right footing. Currently the main UI is at http://localhost:4000/admin/inspect/2026-03-02, implemented using Phoenix LiveView. It’s an “inspection” endpoint, which suggests we’re probably abusing the term and URL.
+We’re pretty early on in the project, so I’m open to a complete restructuring — even abandoning Elixir/Phoenix if it makes sense to. I’m mostly happy with how the DB is, and so it should be easy to write a new application that wraps itself around our current schema.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="sessions">
+    <meta property="article:published_time" content="2026-03-06T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-03-06T00:00:00+00:00">
+    <meta property="article:tag" content="Sheetwork">
+    <meta property="article:tag" content="Elixir">
+    <meta property="article:tag" content="Phoenix">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.0e093384555037e2da1c5bc88743bc6ffeae5746c21531d63e6f49549c664c70.css" media="all">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+</head>
+
+
+
+<body class="auto">
+
+  <div class="content">
+    <header>
+      
+
+<div class="header">
+
+    
+
+    <h1 class="header-title">
+        <a href="https://ben-miller.github.io/">Ben Miller</a>
+    </h1>
+
+    <div class="header-menu">
+        
+
+        
+        
+
+        <p
+            class="small ">
+            <a href="/sessions/" >
+                /dev-sessions
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/til/" >
+                /til
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/notes/" >
+                /notes
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
+</div>
+
+    </header>
+
+    <main class="main">
+      
+
+
+<div >
+  <article>
+    <header class="single-intro-container">
+        
+        <h1 class="single-title">Sheetwork UI planning</h1>
+        
+        <div class="single-subsummary">
+          
+          <div>
+            
+            <p class="author">Ben Miller </p>
+            
+            <p class="single-date">
+              <time datetime="2026-03-06T00:00:00&#43;00:00">March 6, 2026</time>
+            </p>
+          </div>
+        </div>
+        
+    </header>
+    
+    <div class="single-content">
+      <p>Plan mode. Wanting to implement some major UI features, and to do this I want to make sure we start on the right footing. Currently the main UI is at <code>http://localhost:4000/admin/inspect/2026-03-02</code>, implemented using Phoenix LiveView. It&rsquo;s an &ldquo;inspection&rdquo; endpoint, which suggests we&rsquo;re probably abusing the term and URL.</p>
+<p>We&rsquo;re pretty early on in the project, so I&rsquo;m open to a complete restructuring — even abandoning Elixir/Phoenix if it makes sense to. I&rsquo;m mostly happy with how the DB is, and so it should be easy to write a new application that wraps itself around our current schema.</p>
+<p>What I envision for the UI:</p>
+<ul>
+<li>Quarterly view (by quarter)
+<ul>
+<li>Quarterly overview</li>
+<li>Quarterly planner</li>
+</ul>
+</li>
+<li>Weekly view (by week)
+<ul>
+<li>Weekly overview</li>
+<li>Weekly planner</li>
+<li>Weekly audit/reflection</li>
+</ul>
+</li>
+</ul>
+<p>Maybe also a daily view.</p>
+<p>This would essentially involve tabs. Not sure how to structure this because there are potentially many weeks, quarters, days. Does the daily/weekly/quarterly view focus on just the current period? What happens if we want to go back in time or into the future? Don&rsquo;t want to think too hard about this yet — but at least I want to get the model right.</p>
+<p>For now, maybe just a flat list of tabs for the five views listed above. Within each view it should be possible to time-travel to past or future periods, with today/this week/this quarter as the default.</p>
+<p>Currently focusing on the weekly view. I envision:</p>
+<ul>
+<li><strong>Weekly overview</strong>
+<ul>
+<li>Calendar (daily schedule)</li>
+<li>The info we&rsquo;re currently displaying for &ldquo;important&rdquo;, &ldquo;week slots&rdquo;, and &ldquo;week suggestions&rdquo;</li>
+<li>No PDF on the right</li>
+</ul>
+</li>
+<li><strong>Weekly planner</strong>
+<ul>
+<li>PDF on the right, as it is now in the inspection view</li>
+<li>The inbox and un-tagged containers we currently have in the inspection view</li>
+<li>A &ldquo;next week&rdquo; section for dragging items into next week&rsquo;s inbox</li>
+</ul>
+</li>
+</ul>
+<p>Yesterday we made a model for &ldquo;container&rdquo; — essentially a Trello-like space a task (card) can be dragged into. Containers for the weekly view might include:</p>
+<ul>
+<li>Inbox</li>
+<li>For each day of the week (Mon–Sun), a set of available time slots:
+<ul>
+<li><code>morning_tasks</code></li>
+<li><code>shibuya_am</code></li>
+<li><code>shibuya_pm</code></li>
+<li><code>kichijoji_am</code></li>
+<li><code>at_school</code></li>
+<li><code>kichijoji_pm</code></li>
+<li><code>in_eifukucho</code></li>
+<li><code>combini_pm</code></li>
+<li><code>evening_tasks</code></li>
+<li><code>outings</code></li>
+<li><code>night_out</code></li>
+<li><code>cook_dinner</code></li>
+</ul>
+</li>
+<li>Next week (inbox of next week)</li>
+</ul>
+<p>These slots are registered in <code>weekly.yml</code>. We need logic to present the availability of each slot — for example, <code>night_out</code> makes sense on a Saturday, and <code>shibuya_am</code> makes sense on weekdays or when a day is tagged as <code>class</code>.</p>
+<p>In general, I want to use tags as a way for <em>slots</em> to advertise what they have to <em>offer</em>, and for <em>tasks</em> to define what they <em>require</em> in a time slot. For example, a dev session task might need 3+ hours of deep concentration and no distractions — tagged <code>deep-work</code>. Or a task like &ldquo;thrift store scan&rdquo; might take 10 minutes and require being in a certain location — tagged <code>requires:in_shibuya</code>, <code>takes:10m</code>. Slots might have corresponding tags like <code>offers:in_shibuya</code> or <code>offers:3hrs</code>. Getting into predicate logic territory — not sure if that&rsquo;s a good thing yet.</p>
+<p>This tag-matching system — used to generate <em>could-do lists</em> — is out of scope for now, but worth keeping in mind as we design the model.</p>
+<p><strong>Goals for this session:</strong></p>
+<ul>
+<li>Discuss architecture, consider alternatives to the current stack.</li>
+<li>Separate current functionality into <em>weekly planning</em> and <em>weekly overview</em> tabs.</li>
+<li>Define logic for filtering which slots are available on which day. Should be straightforward — probably some new YAML fields. (Not the full slot-matching concept described above.)</li>
+</ul>
+
+    </div>
+  </article>
+
+  
+
+  
+
+  
+  
+
+<div class="single-pagination">
+    <hr />
+
+    <div class="flexnowrap">
+
+        <div class="single-pagination-prev">
+            
+            <div class="single-pagination-container-prev">
+                <div class="single-pagination-text">←</div>
+                <div class="single-pagination-text">
+                    <a href="/sessions/2026-03-04-wrapping-up-weekly-worksheets/">
+                        Wrapping up the weekly worksheets module
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="single-pagination-next">
+            
+            <div class="single-pagination-container-next">
+                <div class="single-pagination-text">
+                    <a href="/sessions/2026-03-15-recommitting-to-elixir/">
+                        Recommitting to Elixir
+                    </a>
+                </div>
+                <div class="single-pagination-text">→</div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <hr />
+</div>
+
+
+
+  
+
+
+</div>
+
+
+    </main>
+  </div>
+
+  
+  
+
+
+
+
+
+    
+
+
+
+
+  <footer>
+    
+
+
+  </footer>
+
+  
+</body>
+
+<script defer src="/js/copy-code.js"></script>
+</html>
